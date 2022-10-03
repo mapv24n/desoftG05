@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>votApp v.1.0</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <script src="myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body id="cuerpo">
+
+    <header id="titulo">
+        <!-- 1. Titulo de la Página (Adecuar el titulo a su gusto)-->
+        <img src="img/images (1).png">
+        <h1>TITULO DE LA PAGINA</h1>
+    </header>
+
+    <section id="info">
+        <!-- 2. Descripción de la Página (Adecuarlo el estilo a su gusto y el contenido que considere)
+        Hacerlo para 4 cantidatos como minimo.
+    -->
+        <p>
+            DESCRIPCION DE LAS VOTACIONES A REALIZAR EN UN PARRAFO NO INFERIOR A 5 LINEAS. (FORMATEAN LA FUENTE)
+
+            DESCRIPCION DE LAS VOTACIONES A REALIZAR EN UN PARRAFO NO INFERIOR A 5 LINEAS. (FORMATEAN LA FUENTE)
+
+            DESCRIPCION DE LAS VOTACIONES A REALIZAR EN UN PARRAFO NO INFERIOR A 5 LINEAS. (FORMATEAN LA FUENTE)
+
+            DESCRIPCION DE LAS VOTACIONES A REALIZAR EN UN PARRAFO NO INFERIOR A 5 LINEAS. (FORMATEAN LA FUENTE)
+
+            DESCRIPCION DE LAS VOTACIONES A REALIZAR EN UN PARRAFO NO INFERIOR A 5 LINEAS. (FORMATEAN LA FUENTE)
+        </p>
+        <!-- 2. Tabla de candidatos (Adecuarlo el estilo a su gusto y el contenido que considere)-->
+        <form name="VOT">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th id="celdaPer">Nombre Candidato 1</th>
+                        <th id="celdaPer">Nombre Candidato 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="50%">
+                            <img src="img/foto.webp" class="styleImgCan"><br>
+                            Descripción Descripción Descripción Descripción Descripción Descripción Descripción
+                            Descripción
+                            Descripción
+                            Descripción Descripción Descripción Descripción Descripción Descripción Descripción
+                            Descripción
+                            Descripción. <br><br>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button"
+                                    onclick="javascript:voto(0);">Votar</button>
+                                <button class="btn btn-primary" type="button"
+                                    onclick="javascript: location='partidoX.html'">Ver Partido Político</button>
+                            </div>
+                        </td>
+                        <td width="50%">
+                            <img src="img/foto.webp" class="styleImgCan"><br>
+                            Descripción Descripción Descripción Descripción Descripción Descripción Descripción
+                            Descripción
+                            Descripción
+                            Descripción Descripción Descripción Descripción Descripción Descripción Descripción
+                            Descripción
+                            Descripción. <br><br>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button"
+                                    onclick="javascript:voto(1);">Votar</button>
+                                <button class="btn btn-primary" type="button">Ver Partido Político</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
+    <aside id="info2">
+        <table id="tabImg">
+            <tr>
+                <td>
+                    <center><img src="img/candidate-vote-statistics-vector.jpeg" id="styleImg"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <button type="button" class="btn btn-outline-primary"
+                            onclick="javascript:estadistica();">Resultados Consolidados</button>
+                        <button type="button" class="btn btn-outline-danger">Resultados por Regiones</button>
+                        <button type="button" class="btn btn-outline-warning">Resultados por Ciudades</button>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <div id="verEst"></div>
+        <canvas id="grafica"></canvas>
+    </aside>
+</body>
+
+</html>
